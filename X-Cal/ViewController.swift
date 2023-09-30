@@ -101,6 +101,8 @@ class ViewController: UIViewController {
     }
     @IBAction func AC(_ sender: Any) {
         OutputNumber.text = "0"
+        tag = 0
+        first = 0
     }
     @IBAction func Reverse(_ sender: Any) {
     }
@@ -125,20 +127,20 @@ class ViewController: UIViewController {
         first = Double(OutputNumber.text!)!
     }
     @IBAction func Equal(_ sender: Any) {
-        var second = Double(OutputNumber.text!)!
+        let second = Double(OutputNumber.text!)!
         if tag == 1
         {
-            var res = first + second
+            let res = first + second
             OutputNumber.text = String(res)
         }
         if tag == 2
         {
-            var res = first - second
+            let res = first - second
             OutputNumber.text = String(res)
         }
         if tag == 3
         {
-            var res = first * second
+            let res = first * second
             OutputNumber.text = String(res)
         }
         if tag == 4
@@ -148,7 +150,7 @@ class ViewController: UIViewController {
                 print("invaild input")
                 return
             }
-            var res = first / second
+            let res = first / second
             OutputNumber.text = String(res)
         }
         
