@@ -153,10 +153,21 @@ class ViewController: UIViewController {
             let res = first / second
             OutputNumber.text = String(res)
         }
+        if tag == 5
+        {
+            if second == 0.0
+            {
+                print("invaild input")
+                return
+            }
+            let res = first.truncatingRemainder(dividingBy: second)
+            OutputNumber.text = String(res)
+        }
         
         tag = 0 ; flag = false
     }
     @IBAction func Dot(_ sender: Any) {
+        OutputNumber.text = OutputNumber.text! + "."
     }
 }
 
