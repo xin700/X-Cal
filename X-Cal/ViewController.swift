@@ -107,24 +107,70 @@ class ViewController: UIViewController {
     @IBAction func Reverse(_ sender: Any) {
     }
     @IBAction func Mo(_ sender: Any) {
+        ClickEqual()
         tag = 5 ; flag = true
         first = Double(OutputNumber.text!)!
     }
     @IBAction func Div(_ sender: Any) {
+        ClickEqual()
         tag = 4 ; flag = true
         first = Double(OutputNumber.text!)!
     }
     @IBAction func Mul(_ sender: Any) {
+        ClickEqual()
         tag = 3 ; flag = true
         first = Double(OutputNumber.text!)!
     }
     @IBAction func Sub(_ sender: Any) {
+        ClickEqual()
         tag = 2 ; flag = true
         first = Double(OutputNumber.text!)!
     }
     @IBAction func Plus(_ sender: Any) {
+        ClickEqual()
         tag = 1 ; flag = true
         first = Double(OutputNumber.text!)!
+    }
+    private func ClickEqual()
+    {
+        let second = Double(OutputNumber.text!)!
+        if tag == 1
+        {
+            let res = first + second
+            OutputNumber.text = String(res)
+        }
+        if tag == 2
+        {
+            let res = first - second
+            OutputNumber.text = String(res)
+        }
+        if tag == 3
+        {
+            let res = first * second
+            OutputNumber.text = String(res)
+        }
+        if tag == 4
+        {
+            if second == 0.0
+            {
+                print("invaild input")
+                return
+            }
+            let res = first / second
+            OutputNumber.text = String(res)
+        }
+        if tag == 5
+        {
+            if second == 0.0
+            {
+                print("invaild input")
+                return
+            }
+            let res = first.truncatingRemainder(dividingBy: second)
+            OutputNumber.text = String(res)
+        }
+        
+        tag = 0 ; flag = false
     }
     @IBAction func Equal(_ sender: Any) {
         let second = Double(OutputNumber.text!)!
@@ -170,4 +216,3 @@ class ViewController: UIViewController {
         OutputNumber.text = OutputNumber.text! + "."
     }
 }
-
