@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "store_1024pt.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"

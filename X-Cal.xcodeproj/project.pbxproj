@@ -16,6 +16,7 @@
 		22333ACA2AC8463C002D584C /* X_CalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22333AC92AC8463C002D584C /* X_CalTests.swift */; };
 		22333AD42AC8463C002D584C /* X_CalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22333AD32AC8463C002D584C /* X_CalUITests.swift */; };
 		22333AD62AC8463C002D584C /* X_CalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22333AD52AC8463C002D584C /* X_CalUITestsLaunchTests.swift */; };
+		22EA40062ACA62B00035B04A /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 22EA40052ACA62B00035B04A /* icons */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,7 @@
 		22333AAF2AC8463B002D584C /* X-Cal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "X-Cal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22333AB22AC8463B002D584C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22333AB42AC8463B002D584C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		22333AB62AC8463B002D584C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22333AB62AC8463B002D584C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		22333AB92AC8463B002D584C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22333ABB2AC8463C002D584C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22333ABE2AC8463C002D584C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		22333ACF2AC8463C002D584C /* X-CalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "X-CalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22333AD32AC8463C002D584C /* X_CalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X_CalUITests.swift; sourceTree = "<group>"; };
 		22333AD52AC8463C002D584C /* X_CalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X_CalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		22EA40052ACA62B00035B04A /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = ../../../Downloads/icons; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 		22333AD22AC8463C002D584C /* X-CalUITests */ = {
 			isa = PBXGroup;
 			children = (
+				22EA40052ACA62B00035B04A /* icons */,
 				22333AD32AC8463C002D584C /* X_CalUITests.swift */,
 				22333AD52AC8463C002D584C /* X_CalUITestsLaunchTests.swift */,
 			);
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22333ABF2AC8463C002D584C /* LaunchScreen.storyboard in Resources */,
+				22EA40062ACA62B00035B04A /* icons in Resources */,
 				22333ABC2AC8463C002D584C /* Assets.xcassets in Resources */,
 				22333ABA2AC8463B002D584C /* Main.storyboard in Resources */,
 			);
@@ -440,6 +444,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8GL98RU625;
@@ -468,6 +473,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8GL98RU625;
