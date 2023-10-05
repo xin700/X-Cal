@@ -17,6 +17,8 @@
 		22333AD42AC8463C002D584C /* X_CalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22333AD32AC8463C002D584C /* X_CalUITests.swift */; };
 		22333AD62AC8463C002D584C /* X_CalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22333AD52AC8463C002D584C /* X_CalUITestsLaunchTests.swift */; };
 		22EA40062ACA62B00035B04A /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 22EA40052ACA62B00035B04A /* icons */; };
+		22EA40092ACEABCF0035B04A /* LandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EA40072ACEABCF0035B04A /* LandscapeViewController.swift */; };
+		22EA400A2ACEABCF0035B04A /* LandscapeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22EA40082ACEABCF0035B04A /* LandscapeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		22333AD32AC8463C002D584C /* X_CalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X_CalUITests.swift; sourceTree = "<group>"; };
 		22333AD52AC8463C002D584C /* X_CalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X_CalUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		22EA40052ACA62B00035B04A /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = ../../../Downloads/icons; sourceTree = "<group>"; };
+		22EA40072ACEABCF0035B04A /* LandscapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeViewController.swift; sourceTree = "<group>"; };
+		22EA40082ACEABCF0035B04A /* LandscapeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandscapeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 				22333AB22AC8463B002D584C /* AppDelegate.swift */,
 				22333AB42AC8463B002D584C /* SceneDelegate.swift */,
 				22333AB62AC8463B002D584C /* ViewController.swift */,
+				22EA40072ACEABCF0035B04A /* LandscapeViewController.swift */,
+				22EA40082ACEABCF0035B04A /* LandscapeViewController.xib */,
 				22333AB82AC8463B002D584C /* Main.storyboard */,
 				22333ABB2AC8463C002D584C /* Assets.xcassets */,
 				22333ABD2AC8463C002D584C /* LaunchScreen.storyboard */,
@@ -237,6 +243,7 @@
 				22333ABF2AC8463C002D584C /* LaunchScreen.storyboard in Resources */,
 				22EA40062ACA62B00035B04A /* icons in Resources */,
 				22333ABC2AC8463C002D584C /* Assets.xcassets in Resources */,
+				22EA400A2ACEABCF0035B04A /* LandscapeViewController.xib in Resources */,
 				22333ABA2AC8463B002D584C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +271,7 @@
 			files = (
 				22333AB72AC8463B002D584C /* ViewController.swift in Sources */,
 				22333AB32AC8463B002D584C /* AppDelegate.swift in Sources */,
+				22EA40092ACEABCF0035B04A /* LandscapeViewController.swift in Sources */,
 				22333AB52AC8463B002D584C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

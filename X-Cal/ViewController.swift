@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     // tag == 2 : sub
     // tag == 3 : mul
     // tag == 4 : div
-    // tag == 5 : mo
+    // tag == 5 : mod
     var flag:Bool = false
     var temp:Double? = 0.0
     var first:Double = 0.0
@@ -106,7 +106,7 @@ class ViewController: UIViewController {
     }
     @IBAction func Reverse(_ sender: Any) {
     }
-    @IBAction func Mo(_ sender: Any) {
+    @IBAction func Mod(_ sender: Any) {
         ClickEqual()
         tag = 5 ; flag = true
         first = Double(OutputNumber.text!)!
@@ -213,6 +213,9 @@ class ViewController: UIViewController {
         tag = 0 ; flag = false
     }
     @IBAction func Dot(_ sender: Any) {
-        OutputNumber.text = OutputNumber.text! + "."
+        if OutputNumber.text?.last != "."
+        {
+            OutputNumber.text = OutputNumber.text! + "."
+        }
     }
 }
