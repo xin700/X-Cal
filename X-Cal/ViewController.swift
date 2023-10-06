@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     var flag:Bool = false
     var temp:Double? = 0.0
     var first:Double = 0.0
+    var HistoryExisted:Bool = false
     @IBOutlet weak var OutputNumber: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -104,7 +105,17 @@ class ViewController: UIViewController {
         tag = 0
         first = 0
     }
-    @IBAction func Reverse(_ sender: Any) {
+    @IBAction func History(_ sender: Any) {
+        if HistoryExisted == false {return}
+        // 获取 UserDefaults 实例
+        let defaults = UserDefaults.standard
+
+        // 获取存储的数据
+        if let RemData = defaults.string(forKey: "RemData") {
+            print(RemData)
+            OutputNumber.text = RemData
+        }
+
     }
     @IBAction func Mod(_ sender: Any) {
         ClickEqual()
@@ -209,6 +220,9 @@ class ViewController: UIViewController {
             let res = first.truncatingRemainder(dividingBy: second)
             OutputNumber.text = String(res)
         }
+        let defaults = UserDefaults.standard
+        defaults.set(OutputNumber.text!,forKey: "RemData")
+        HistoryExisted = true
         
         tag = 0 ; flag = false
     }

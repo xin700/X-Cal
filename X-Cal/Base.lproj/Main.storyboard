@@ -63,7 +63,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQk-Ib-Lvz">
                                 <rect key="frame" x="111" y="312" width="78" height="79"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="+/-" cornerStyle="capsule">
+                                <buttonConfiguration key="configuration" style="tinted" title="His" cornerStyle="capsule">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" red="0.34142370405444916" green="0.38329574742268047" blue="0.3378026711969303" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
@@ -72,7 +72,7 @@
                                     <color key="baseBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="Reverse:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bQY-ct-1WM"/>
+                                    <action selector="History:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ppe-iq-Mxp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3X0-hc-Wsh">
@@ -283,6 +283,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="Mo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RsM-i0-1vh"/>
+                                    <action selector="Mod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0GH-Mz-BpB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwX-ry-Ryl">
@@ -413,7 +414,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3.8167938931297707" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="86" y="-8"/>
         </scene>
     </scenes>
     <resources>
