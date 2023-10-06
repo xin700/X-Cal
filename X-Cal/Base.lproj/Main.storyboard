@@ -282,7 +282,6 @@
                                     <color key="baseBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="Mo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RsM-i0-1vh"/>
                                     <action selector="Mod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0GH-Mz-BpB"/>
                                 </connections>
                             </button>
