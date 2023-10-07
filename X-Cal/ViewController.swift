@@ -34,71 +34,44 @@ class ViewController: UIViewController {
         OutputNumber.text = OutputNumber.text! + "0"
 
     }
+    private func DigitClick(_ Number: String)
+    {
+        if flag == true {OutputNumber.text = Number; flag = false;return }
+        if temp == nil {OutputNumber.text = Number; return }
+        temp = Double(OutputNumber.text!)!
+        if (temp == 0.0 && OutputNumber.text?.last != ".") {OutputNumber.text = Number; return}
+        OutputNumber.text = OutputNumber.text! + Number
+    }
+    
     
     @IBAction func One(_ sender: Any) {
-        if flag == true {OutputNumber.text = "1"; flag = false;return }
-        if temp == nil {OutputNumber.text = "1"; return }
-        temp = Double(OutputNumber.text!)!
-        if temp == 0.0 {OutputNumber.text = "1"; return}
-        OutputNumber.text = OutputNumber.text! + "1"
+        DigitClick("1")
     }
     @IBAction func Two(_ sender: Any) {
-        if flag == true {OutputNumber.text = "2"; flag = false;return }
-        if temp == nil {OutputNumber.text = "2"; return }
-        temp = Double(OutputNumber.text!)!
-        if temp == 0.0 {OutputNumber.text = "2"; return}
-        OutputNumber.text = OutputNumber.text! + "2"
+        DigitClick("2")
         
     }
     @IBAction func Three(_ sender: Any) {
-        if flag == true {OutputNumber.text = "3"; flag = false;return }
-        if temp == nil {OutputNumber.text = "3"; return }
-        temp = Double(OutputNumber.text!)!
-        if temp == 0.0 {OutputNumber.text = "3"; return}
-        OutputNumber.text = OutputNumber.text! + "3"
+        DigitClick("3")
     }
     @IBAction func Four(_ sender: Any) {
-        if flag == true {OutputNumber.text = "4"; flag = false;return }
-        if temp == nil {OutputNumber.text = "4"; return }
-        temp = Double(OutputNumber.text!)!
-        if temp == 0.0 {OutputNumber.text = "4"; return}
-        OutputNumber.text = OutputNumber.text! + "4"
+        DigitClick("4")
     }
     @IBAction func Five(_ sender: Any)
     {
-        if flag == true {OutputNumber.text = "5"; flag = false;return }
-        if temp == nil {OutputNumber.text = "5"; return }
-        temp = Double(OutputNumber.text!)!
-        if temp == 0.0 {OutputNumber.text = "5"; return}
-        OutputNumber.text = OutputNumber.text! + "5"
+        DigitClick("5")
     }
     @IBAction func Six(_ sender: Any) {
-        if flag == true {OutputNumber.text = "6"; flag = false;return }
-        if temp == nil {OutputNumber.text = "6"; return }
-        temp = Double(OutputNumber.text!)!
-        if temp == 0.0 {OutputNumber.text = "6"; return}
-        OutputNumber.text = OutputNumber.text! + "6"
+        DigitClick("6")
     }
     @IBAction func Seven(_ sender: Any) {
-        if flag == true {OutputNumber.text = "7"; flag = false;return }
-        if temp == nil {OutputNumber.text = "7"; return }
-        temp = Double(OutputNumber.text!)!
-        if temp == 0.0 {OutputNumber.text = "7"; return}
-        OutputNumber.text = OutputNumber.text! + "7"
+        DigitClick("7")
     }
     @IBAction func Eight(_ sender: Any) {
-        if flag == true {OutputNumber.text = "8"; flag = false;return }
-        if temp == nil {OutputNumber.text = "8"; return }
-        temp = Double(OutputNumber.text!)!
-        if temp == 0.0 {OutputNumber.text = "8"; return}
-        OutputNumber.text = OutputNumber.text! + "8"
+        DigitClick("8")
     }
     @IBAction func Nine(_ sender: Any) {
-        if flag == true {OutputNumber.text = "9"; flag = false; return }
-        if temp == nil {OutputNumber.text = "9"; return }
-        temp = Double(OutputNumber.text!)!
-        if temp == 0.0 {OutputNumber.text = "9"; return}
-        OutputNumber.text = OutputNumber.text! + "9"
+        DigitClick("9")
     }
     @IBAction func AC(_ sender: Any) {
         OutputNumber.text = "0"
@@ -164,6 +137,7 @@ class ViewController: UIViewController {
         {
             if second == 0.0
             {
+                OutputNumber.text = "invaild input"
                 print("invaild input")
                 return
             }
@@ -174,6 +148,7 @@ class ViewController: UIViewController {
         {
             if second == 0.0
             {
+                OutputNumber.text = "invaild input"
                 print("invaild input")
                 return
             }
@@ -227,6 +202,10 @@ class ViewController: UIViewController {
         tag = 0 ; flag = false
     }
     @IBAction func Dot(_ sender: Any) {
+        if OutputNumber.text?.firstIndex(of: ".") != nil
+        {
+            return;
+        }
         if OutputNumber.text?.last != "."
         {
             OutputNumber.text = OutputNumber.text! + "."
